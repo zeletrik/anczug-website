@@ -1,0 +1,6 @@
+:host ::ng-deep .tabset1 li.nav-item {
+    padding-bottom: 5px !important;
+  }
+.btn {
+  margin-bottom: 5px !important;
+}

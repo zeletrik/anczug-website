@@ -1,0 +1,76 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+  <div class="container">
+    <a class="navbar-brand mr-lg-5">
+      <img src="./assets/img/anczug.png">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a>
+              <img src="./assets/img/anczug.png">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button" href="#about">
+            <span class="nav-link-inner--text">Rólunk</span>
+          </a>
+          <div class="dropdown-menu-xl dropdown-menu" >
+            <div class="dropdown-menu-inner">
+                <a class="media d-flex align-items-center" href="#gallery">
+                    <div class="media-body ml-3">
+                      <h5 class="heading text-primary mb-md-1">Galéria</h5>
+                    </div>
+                  </a>
+              <a class="media d-flex align-items-center" href="#facebook">
+                  <div class="media-body ml-3">
+                    <h5 class="heading text-primary mb-md-1">Aktualitások</h5>
+                    <p class="description d-none d-md-inline-block mb-0">Friss hírek, információk</p>
+                  </div>
+                </a>
+              <a class="media d-flex align-items-center" href="#members">
+                <div class="media-body ml-3">
+                  <h5 class="heading text-primary mb-md-1">Tagság</h5>
+                  <p class="description d-none d-md-inline-block mb-0">2002. márciusában, az a 14 gépészhallgató alapította az Anczug Tanszék Baráti Társaságot, akik a balekoktatásokon a diákegyenruhákról tartottak előadást.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret"  role="button" href="#materials">
+            <span class="nav-link-inner--text">Egyenruhák</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://www.facebook.com/AnczugTanszek" target="_blank" data-toggle="tooltip" title="Keress minket Facebookon">
+            <i class="fa fa-facebook-square"></i>
+            <span class="nav-link-inner--text d-lg-none">Facebook</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="mailto://anczugtanszek@gmail.com" target="_blank" data-toggle="tooltip" title="Küldj emailt">
+            <i class="fa fa-inbox"></i>
+            <span class="nav-link-inner--text d-lg-none">Email</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

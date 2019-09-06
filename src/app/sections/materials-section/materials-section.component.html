@@ -1,0 +1,95 @@
+<section class="section section-lg section-shaped"  id="materials">
+    <div class="shape shape-style-1 shape-default">
+    </div>
+    <div class="container py-md">
+      <div class="row row-grid justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <h3 class="display-3 text-white">Selmeci Utódiskolák egyenruhái, egyenviseletei
+            <span class="text-white">Oktatási anyagok</span>
+          </h3>
+          <p class="lead text-white">Az Anczug Tanszék Baráti Társaság által összeállított PDF szabadon letölthető és felhasználható. Valamint az oktatásokon használt prezentáció is megtalálható ezen szekcióban.</p>
+          <div class="btn-wrapper">
+            <button class="btn btn-success" (click)="open(classic,'' , '')">PDF Megnyitása</button>
+            <a class="btn btn-white" href="/assets/docs/Egyenruhakiadvny.pdf" target="_blank">PDF Letötlése</a>
+            <a class="btn btn-white" href="/assets/docs/anczug-oktatas.ppt" target="_blank">PPT Letötlése</a>
+          </div>
+        </div>
+        <div class="col-lg-5 mb-lg-auto" (click)="open(classic,'' , '')">
+          <div class="transform-perspective-right">
+            <div class="card bg-secondary shadow border-0">
+            <img src="./assets/img/material-pdf.PNG">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #classic let-c="close" let-d="dismiss">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="modal-title-default">Selmeci Utódiskolák egyenruhái, egyenviseletei</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <pdf-viewer src="/assets/docs/Egyenruhakiadvny.pdf" 
+              [render-text]="true"></pdf-viewer>  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal" (click)="c('Close click')">Bezárás</button>
+          </div>
+        </div>
+      </ng-template>
+    <!-- SVG separator -->
+    <div class="separator separator-bottom separator-skew">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </section>
+    <!-- HERO separator -->
+  <section class="section section-lg section-shaped">
+      <div class="container">
+          <ngb-tabset [justify]="'center'" type="pills" class="tabset1">
+              <ngb-tab title="{{dress.name}}" *ngFor="let dress of dressData">
+                <ng-template ngbTabContent>
+                    <div class="row row-grid justify-content-between align-items-center" style="padding-top:16px;">
+                        <div class="col-lg-5 mb-lg-auto" (click)="open(egyen,'' , '')">
+                              <div class="card bg-secondary shadow border-0">
+                              <img src="./assets/img/egyen/{{dress.pictureUrl}}">
+                              </div>
+                          </div>
+                        <div class="col-lg-6">
+                          <h3 class="display-3">
+                              {{dress.name}}
+                          </h3>
+                          <p class="lead">
+                              {{dress.description | slice:0:255 | htmlEscape }}...
+                            </p>
+                          <div class="btn-wrapper">
+                            <button class="btn btn-success" (click)="open(egyen,'' , '')">Bővebben</button>
+                          </div>
+                        </div>
+                      </div>
+                </ng-template>
+                <ng-template #egyen let-c="close" let-d="dismiss">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h6 class="modal-title" id="modal-title-default">
+                            {{dress.name}}
+                        </h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body"  [innerHTML]="dress.description">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal" (click)="c('Close click')">Bezárás</button>
+                      </div>
+                    </div>
+                  </ng-template>
+              </ngb-tab>
+          </ngb-tabset>
+      </div>
+</section>

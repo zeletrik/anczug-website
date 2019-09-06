@@ -1,0 +1,124 @@
+<section class="section section-lg section-nucleo-icons pb-250" style="padding-bottom: 0px !important;"  id="members">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="display-3">Tagság</h2>
+      </div>
+    </div>
+    <div>
+        <div class="icons-container blur-item mt-5" data-toggle="on-screen">
+          <!-- Center -->
+          <i class="icon ni custom-icon" style="background-image: url('./assets/img/icons/anczug.png');"></i>
+          <i class="icon icon-sm ni custom-icon" style="background-image: url('./assets/img/icons/distvan.jpeg');"></i>
+          <i class="icon icon ni custom-icon" style="background-image: url('./assets/img/icons/zrobi.jpg');"></i>
+          <i class="icon icon-sm ni custom-icon" style="background-image: url('./assets/img/icons/rattila.jpg');"></i>
+          <i class="icon ni custom-icon" style="background-image: url('./assets/img/icons/pici.jpg');"></i>
+          <i class="icon ni custom-icon" style="background-image: url('./assets/img/icons/zsebezsolt.jpg');"></i>
+          <i class="icon icon-sm ni custom-icon" style="background-image: url('./assets/img/icons/molni.jpg');"></i>
+          <i class="icon ni custom-icon" style="background-image: url('./assets/img/icons/jakabrobi.jpg');"></i>
+          <i class="icon ni custom-icon" style="background-image: url('./assets/img/icons/zpatrik.jpg');"></i>
+          <i class="icon icon-sm ni custom-icon" style="background-image: url('./assets/img/icons/hlacsbela.jpg');"></i>
+          <i class="icon icon-sm ni custom-icon" style="background-image: url('./assets/img/icons/ceco1.jpg');"></i>
+          <i class="icon ni custom-icon" style="background-image: url('./assets/img/icons/jezuska1.jpg');"></i>
+          <i class="icon icon-sm ni custom-icon" style="background-image: url('./assets/img/icons/jezuska2.jpg');"></i>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="section section-lg">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-lg">
+        <div class="col-lg-8">
+          <h2 class="display-3">Jelenlegi aktív tagság</h2>
+          <p class="lead text-muted">Társaságunk jelenleg {{memberSize}} akítv taggal és számatalan passzív taggal rendelkezik.</p>
+        </div>
+      </div>
+      <div class="row">
+
+
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" *ngFor="let member of members">
+          <div class="px-4">
+            <img src="./assets/img/members/{{member.pictureUrl}}" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
+            <div class="pt-4 text-center">
+              <h5 class="title">
+                <span class="d-block mb-1">{{member.name}}</span>
+                <small class="h6 text-muted">{{member.alias}}</small>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <div class="py-5 bg-secondary">
+      <div class="container">
+        <!-- Inputs (alternative) -->
+        <div class="mb-3">
+            <h2 class="display-3">Alapítás</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 mb-lg-auto">
+              <div class="transform-perspective-left">
+                <div class="card bg-secondary shadow border-0">
+                  <div class="card-body px-lg-5 py-lg-5" style="overflow-y: scroll; height:600px;">
+                    <p>
+                      Mi, azon nagymúltú Akadémia, hagyománytisztelő diákjai, késztetést érezvén társulásra – a házasság gondolatát szinte azonnal, egyöntetűen elvetve – elgondolkodtunk hogyan is tehetnénk nívósabbá, egyszersmind érdekesebbé, egyszóval színesebbé csodálatos diákéveinket. A felmerült gondolatok egyike, hogy esetleg KáeFTét, vagy esetlegesen K.H.T.-t alapítva, mint gazdasági társulás tevékenykedhessünk. Mivel azonban a gazdász-gondolkodásmód végtelenül távol esik tőlünk, Gépészektől, ezért a fenti ötletet, kisebb tanakodást követően a házasság gondolata mellé helyeztük. Egy merőben más ötlet szerint be kellene ásnunk magunkat Miskolc legnagyobb pincészetébe, esetleg bor-, illetőleg sörgazdaságába, a továbbiakban szesztestvéreknek fogadhatnánk egymást. Nos az ötlet nem rossz, a társulásnak ezen formája azonban kivitelezését tekintve, nem a legegyszerűbb. Tovább gondolkodtunk hát, mi is lehet a megfelelő gondolat. Végezetül a harmadik alternatíva alakult leginkább megvalósíthatónak, mely a következő lészen: 
+                    </p><p>
+                      Mi, Dicső gépész firmák azon elhatározásra jutottunk, Selmecről elzavarva, Sopronból elköltözve, Miskolcon megállapodva , a hagyományaink tiszteletére baráti társaságot alapítunk, melynek neve legyen: Anczug Tanszék! 
+                    </p><p>
+                      Mi alapító tagok, akik okos, sportos, tanulós, jóképű, rendszerető, minden reggel 5.30-kor kelő, vagy le sem fekvő, MACIFRÖCCS-öt, és egyéb „a” betűvel kezdődő italt szürcsölő, szép lányokat szerető Burschok vagyunk leszögezzük, hogy céljaink megvalósítása érdekében a diploma megszerzésére irányuló mindenféle tevékenységet háttérbe szorítunk, és rendszeresen CÉCÓ-t tartunk, magunk és mindenki boldogítására! 
+                    </p><p>
+                      Céljaink: 
+                    </p>
+                      <ul>
+                        <li>
+                            A XXI-XXII. század illetve a következő évezred diákjainak a hagyományok átadása.
+                        </li>
+                        <li>Az egyenruhák alapos megismertetése.</li>
+                        <li>Magyar nóták gyűjtése és dalolása.</li>
+                      </ul>
+                      <br>
+                    <p>
+                      Kelt:<br> Dudujkavölgy, 2002.március 20.
+                      A.T.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" style="padding-top:30px;">
+                <strong>Csuhaj Péter</strong> a. Boromissza IhajCsuhaj Gergely
+                <br>
+                <strong>Gugg Zsolt</strong> a. Robin Gukk, Párbajkirály
+                <br>
+                <strong>Kiss Sándor</strong> a. Sanya, aki a tortát tapossa laposra, avagy a Láncravert Hajzuhatag
+                <br>
+                <strong>Kertész Róbert</strong> a. Roberto Amigo Mijo
+                <br>
+                <strong>Luka Lajos</strong> a. Hova tűnt a konyakom?
+                <br>
+                <strong>Mészáros Mihály</strong> a. Error
+                <br>
+                <strong>Nagy Gábor</strong> a. Nagyon Brutális Patyolatmadár
+                <br>
+                <strong>Papp János Attila</strong> a. Bolton a Szívtipró Dzsimi avagy Megvadulok, ha Nem Kapok Nőt
+                <br>
+                <strong>Szőlősi József</strong> a. Mórózus Hagyományőrző avagy Elalszom Mindenhol
+                <br>
+                <strong>Szolnoki Sándor</strong> a. Morbidális Szökőkútba, Hol a Komlóm? Avagy Hosszúlábú Sörömgólvágó
+                <br>
+                <strong>Tóth Zsolt</strong> a. Moci Mackó
+                <br>
+                <strong>Varga Tamás</strong> a. Balekinaszégyenítőmosoly
+                <br>
+                <strong>Virág Zoltán</strong> a. Zozó
+                <br>
+                <strong>Zsigmond Endre</strong> a. Mjúzikális Rókaűző Balekínatipró avagy Ligetbe Jössz Két Ekssel
+            </div>
+        </div>
+      </div>
+    </div>
