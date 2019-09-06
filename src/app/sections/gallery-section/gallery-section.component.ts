@@ -23,14 +23,14 @@ export class GallerySectionComponent implements OnInit {
     const files: String[] = imageData['default']['pictureUrl'];
 
     files.forEach(imageSrc => {
-      this.items.push(new ImageItem({ src: this.basePath + imageSrc, thumb: this.basePath + imageSrc }));
+      this.items.push(new ImageItem({ src: this.basePath + imageSrc + '.jpg', thumb: this.basePath + 'thumbnails/' + imageSrc + '_tn.jpg' }));
     });
 
     for (let i = 0; i < 10; i++) {
-      this.rightFiles.push(files[Math.floor(Math.random() * files.length)]);
+      this.rightFiles.push(files[Math.floor(Math.random() * files.length)] + '.jpg');
     }
     for (let i = 0; i < 10; i++) {
-      this.leftFiles.push(files[Math.floor(Math.random() * files.length)]);
+      this.leftFiles.push(files[Math.floor(Math.random() * files.length)] + '.jpg');
     }
   }
 
