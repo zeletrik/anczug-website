@@ -23,7 +23,7 @@
     "@ngx-gallery/core": "^4.0.3",
     "image-downloader": "^3.5.0",
     "jw-bootstrap-switch-ng2": "2.0.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ng2-nouislider": "1.7.13",
     "ng2-pdf-viewer": "^5.3.4",
     "ngx-doc-viewer": "^0.1.20",
